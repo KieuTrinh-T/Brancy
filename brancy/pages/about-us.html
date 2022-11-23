@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Brancy - Cosmetic & Beauty Salon Website Template</title>
+    <title>Freshies Comestic</title>
     <meta name="robots" content="noindex, follow" />
     <meta name="description" content="Brancy - Cosmetic & Beauty Salon Website Template">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,7 +12,7 @@
     <meta name="author" content="codecarnival" />
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.webp">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon.webp">
 
     <!-- CSS (Font, Vendor, Icon, Plugins & Style CSS files) -->
 
@@ -22,16 +22,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Vendor CSS (Bootstrap & Icon Font) -->
-    <link rel="stylesheet" href="./assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/vendor/bootstrap.min.css">
 
     <!-- Plugins CSS (All Plugins Files) -->
-    <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/fancybox.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/nice-select.css">
+    <link rel="stylesheet" href="../assets/css/plugins/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/plugins/fancybox.min.css">
+    <link rel="stylesheet" href="../assets/css/plugins/nice-select.css">
+    <link rel="stylesheet" href="../assets/css/plugins/swiper-bundle.min.css">
 
     <!-- Style CSS -->
-    <link rel="stylesheet" href="./assets/css/style.min.css">
+    <link rel="stylesheet" href="../assets/css/style.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html")
+        })
+    </script>
 
 </head>
 
@@ -39,9 +46,12 @@
 
     <!--== Wrapper Start ==-->
     <div class="wrapper">
+        <header id="header">
+
+        </header>
 
         <!--== Start Header Wrapper ==-->
-        <header class="header-area sticky-header">
+        <!-- <header class="header-area sticky-header">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-5 col-sm-6 col-lg-3">
@@ -165,242 +175,158 @@
                     </div>
                 </div>
             </div>
-        </header>
+        </header> -->
         <!--== End Header Wrapper ==-->
 
         <main class="main-content">
-
             <!--== Start Page Header Area Wrapper ==-->
-            <nav aria-label="breadcrumb" class="breadcrumb-style1">
+            <section class="page-header-area">
                 <div class="container">
-                    <ol class="breadcrumb justify-content-center">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Cart</li>
-                    </ol>
-                </div>
-            </nav>
-            <!--== End Page Header Area Wrapper ==-->
-
-            <!--== Start Product Area Wrapper ==-->
-            <section class="section-space">
-                <div class="container">
-                    <div class="shopping-cart-form table-responsive">
-                        <form action="#" method="post">
-                            <table class="table text-center">
-                                <thead>
-                                    <tr>
-                                        <th class="product-remove">&nbsp;</th>
-                                        <th class="product-thumbnail">&nbsp;</th>
-                                        <th class="product-name">Product</th>
-                                        <th class="product-price">Price</th>
-                                        <th class="product-quantity">Quantity</th>
-                                        <th class="product-subtotal">Total</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="tbody-item">
-                                        <td class="product-remove">
-                                            <a class="remove" href="javascript:void(0)">×</a>
-                                        </td>
-                                        <td class="product-thumbnail">
-                                            <div class="thumb">
-                                                <a href="single-product.html">
-                                                    <img src="assets/images/shop/cart1.webp" width="68" height="84" alt="Image-HasTech">
-                                                </a>
-                                            </div>
-                                        </td>
-                                        <td class="product-name">
-                                            <a class="title" href="single-product.html">Condimentum posuere consectetur urna</a>
-                                        </td>
-                                        <td class="product-price">
-                                            <span class="price">$115.00</span>
-                                        </td>
-                                        <td class="product-quantity">
-                                            <div class="pro-qty">
-                                                <input type="text" class="quantity" title="Quantity" value="1">
-                                            </div>
-                                        </td>
-                                        <td class="product-subtotal">
-                                            <span class="price">$115.00</span>
-                                        </td>
-                                    </tr>
-                                    <tr class="tbody-item">
-                                        <td class="product-remove">
-                                            <a class="remove" href="javascript:void(0)">×</a>
-                                        </td>
-                                        <td class="product-thumbnail">
-                                            <div class="thumb">
-                                                <a href="single-product.html">
-                                                    <img src="assets/images/shop/cart2.webp" width="68" height="84" alt="Image-HasTech">
-                                                </a>
-                                            </div>
-                                        </td>
-                                        <td class="product-name">
-                                            <a class="title" href="single-product.html">Kaoreet lobortis sagittis laoreet</a>
-                                        </td>
-                                        <td class="product-price">
-                                            <span class="price">$95.00</span>
-                                        </td>
-                                        <td class="product-quantity">
-                                            <div class="pro-qty">
-                                                <input type="text" class="quantity" title="Quantity" value="1">
-                                            </div>
-                                        </td>
-                                        <td class="product-subtotal">
-                                            <span class="price">$95.00</span>
-                                        </td>
-                                    </tr>
-                                    <tr class="tbody-item">
-                                        <td class="product-remove">
-                                            <a class="remove" href="javascript:void(0)">×</a>
-                                        </td>
-                                        <td class="product-thumbnail">
-                                            <div class="thumb">
-                                                <a href="single-product.html">
-                                                    <img src="assets/images/shop/cart3.webp" width="68" height="84" alt="Image-HasTech">
-                                                </a>
-                                            </div>
-                                        </td>
-                                        <td class="product-name">
-                                            <a class="title" href="single-product.html">Nostrum exercitationem itae ipsum</a>
-                                        </td>
-                                        <td class="product-price">
-                                            <span class="price">$79.00</span>
-                                        </td>
-                                        <td class="product-quantity">
-                                            <div class="pro-qty">
-                                                <input type="text" class="quantity" title="Quantity" value="1">
-                                            </div>
-                                        </td>
-                                        <td class="product-subtotal">
-                                            <span class="price">$79.00</span>
-                                        </td>
-                                    </tr>
-                                    <tr class="tbody-item-actions">
-                                        <td colspan="6">
-                                            <button type="submit" class="btn-update-cart disabled" disabled>Update cart</button>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </form>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 col-lg-6">
-                            <div class="coupon-wrap">
-                                <h4 class="title">Coupon</h4>
-                                <p class="desc">Enter your coupon code if you have one.</p>
-                                <input type="text" class="form-control" placeholder="Coupon code">
-                                <button type="button" class="btn-coupon">Apply coupon</button>
+                    <div class="row align-items-center">
+                        <div class="col-md-7 col-lg-7 col-xl-5">
+                            <div class="page-header-content">
+                                <div class="title-img"><img src="assets/images/photos/about-title.webp" alt="Image"></div>
+                                <h2 class="page-header-title">We, are Brancy</h2>
+                                <h4 class="page-header-sub-title">Best cosmetics provider</h4>
+                                <p class="page-header-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis.</p>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-6">
-                            <div class="cart-totals-wrap">
-                                <h2 class="title">Cart totals</h2>
-                                <table>
-                                    <tbody>
-                                        <tr class="cart-subtotal">
-                                            <th>Subtotal</th>
-                                            <td>
-                                                <span class="amount">$499.00</span>
-                                            </td>
-                                        </tr>
-                                        <tr class="shipping-totals">
-                                            <th>Shipping</th>
-                                            <td>
-                                                <ul class="shipping-list">
-                                                    <li class="radio">
-                                                        <input type="radio" name="shipping" id="radio1" checked>
-                                                        <label for="radio1">Flat rate: <span>$3.00</span></label>
-                                                    </li>
-                                                    <li class="radio">
-                                                        <input type="radio" name="shipping" id="radio2">
-                                                        <label for="radio2">Free shipping</label>
-                                                    </li>
-                                                    <li class="radio">
-                                                        <input type="radio" name="shipping" id="radio3">
-                                                        <label for="radio3">Local pickup</label>
-                                                    </li>
-                                                </ul>
-                                                <p class="destination">Shipping to <strong>USA</strong>.</p>
-                                                <a href="javascript:void(0)" class="btn-shipping-address">Change address</a>
-                                            </td>
-                                        </tr>
-                                        <tr class="order-total">
-                                            <th>Total</th>
-                                            <td>
-                                                <span class="amount">$504.00</span>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <div class="text-end">
-                                    <a href="shop-checkout.html" class="checkout-button">Proceed to checkout</a>
-                                </div>
+                        <div class="col-md-5 col-lg-5 col-xl-7">
+                            <div class="page-header-thumb">
+                                <img src="assets/images/photos/about1.webp" width="570" height="669" alt="Image">
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <!--== End Product Area Wrapper ==-->
+            <!--== End Page Header Area Wrapper ==-->
+
+            <!--== Start Funfact Area Wrapper ==-->
+            <section class="funfact-area section-space">
+                <div class="container">
+                    <div class="row mb-n6">
+                        <div class="col-sm-6 col-lg-4 mb-6">
+                            <!--== Start Funfact Item ==-->
+                            <div class="funfact-item">
+                                <div class="icon">
+                                    <img src="assets/images/icons/funfact1.webp" width="110" height="110" alt="Icon">
+                                </div>
+                                <h2 class="funfact-number">5000+</h2>
+                                <h6 class="funfact-title">Clients</h6>
+                            </div>
+                            <!--== End Funfact Item ==-->
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-6">
+                            <!--== Start Funfact Item ==-->
+                            <div class="funfact-item">
+                                <div class="icon">
+                                    <img src="assets/images/icons/funfact2.webp" width="110" height="110" alt="Icon">
+                                </div>
+                                <h2 class="funfact-number">250+</h2>
+                                <h6 class="funfact-title">Projects</h6>
+                            </div>
+                            <!--== End Funfact Item ==-->
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-6">
+                            <!--== Start Funfact Item ==-->
+                            <div class="funfact-item">
+                                <div class="icon">
+                                    <img src="assets/images/icons/funfact3.webp" width="110" height="110" alt="Icon">
+                                </div>
+                                <h2 class="funfact-number">1.5M+</h2>
+                                <h6 class="funfact-title">Revenue</h6>
+                            </div>
+                            <!--== End Funfact Item ==-->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--== End Funfact Area Wrapper ==-->
+
+            <!--== Start Brand Logo Area Wrapper ==-->
+            <div class="section-space">
+                <div class="container">
+                    <div class="swiper brand-logo-slider-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide brand-logo-item">
+                                <!--== Start Brand Logo Item ==-->
+                                <img src="assets/images/brand-logo/1.webp" width="155" height="110" alt="Image-HasTech">
+                                <!--== End Brand Logo Item ==-->
+                            </div>
+                            <div class="swiper-slide brand-logo-item">
+                                <!--== Start Brand Logo Item ==-->
+                                <img src="assets/images/brand-logo/2.webp" width="241" height="110" alt="Image-HasTech">
+                                <!--== End Brand Logo Item ==-->
+                            </div>
+                            <div class="swiper-slide brand-logo-item">
+                                <!--== Start Brand Logo Item ==-->
+                                <img src="assets/images/brand-logo/3.webp" width="147" height="110" alt="Image-HasTech">
+                                <!--== End Brand Logo Item ==-->
+                            </div>
+                            <div class="swiper-slide brand-logo-item">
+                                <!--== Start Brand Logo Item ==-->
+                                <img src="assets/images/brand-logo/4.webp" width="196" height="110" alt="Image-HasTech">
+                                <!--== End Brand Logo Item ==-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--== End Brand Logo Area Wrapper ==-->
+
+            <!--== Start About Area Wrapper ==-->
+            <section class="section-space pt-0 mb-n1">
+                <div class="container">
+                    <div class="about-thumb">
+                        <img src="assets/images/photos/about2.webp" alt="Image">
+                    </div>
+                    <div class="about-content">
+                        <h2 class="title">Best Cosmetics Provider</h2>
+                        <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel arcu aliquet sem risus nisl. Neque, scelerisque in erat lacus ridiculus habitant porttitor. Malesuada pulvinar sollicitudin enim, quis sapien tellus est. Pellentesque
+                            amet vel maecenas nisi. In elementum magna nulla ridiculus sapien mollis volutpat sit. Arcu egestas massa consectetur felis urna porttitor ac.</p>
+                    </div>
+                </div>
+            </section>
+            <!--== End About Area Wrapper ==-->
+
+            <!--== Start Feature Area Wrapper ==-->
+            <div class="feature-area section-space">
+                <div class="container">
+                    <div class="row mb-n9">
+                        <div class="col-md-6 col-lg-4 mb-8">
+                            <!--== Start Feature Item ==-->
+                            <div class="feature-item">
+                                <h5 class="title"><img class="icon" src="assets/images/icons/feature1.webp" width="60" height="60" alt="Icon"> Support Team</h5>
+                                <p class="desc">Lorem ipsum dolor amet, consectetur adipiscing. Ac tortor enim metus, turpis.</p>
+                            </div>
+                            <!--== End Feature Item ==-->
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-8">
+                            <!--== Start Feature Item ==-->
+                            <div class="feature-item">
+                                <h5 class="title"><img class="icon" src="assets/images/icons/feature2.webp" width="60" height="60" alt="Icon"> Certification</h5>
+                                <p class="desc">Lorem ipsum dolor amet, consectetur adipiscing. Ac tortor enim metus, turpis.</p>
+                            </div>
+                            <!--== End Feature Item ==-->
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-8">
+                            <!--== Start Feature Item ==-->
+                            <div class="feature-item">
+                                <h5 class="title"><img class="icon" src="assets/images/icons/feature3.webp" width="60" height="60" alt="Icon"> Natural Products</h5>
+                                <p class="desc">Lorem ipsum dolor amet, consectetur adipiscing. Ac tortor enim metus, turpis.</p>
+                            </div>
+                            <!--== End Feature Item ==-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--== End Feature Area Wrapper ==-->
 
         </main>
 
         <!--== Start Footer Area Wrapper ==-->
-        <footer class="footer-area">
-            <!--== Start Footer Main ==-->
-            <div class="footer-main">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-lg-4">
-                            <div class="widget-item">
-                                <div class="widget-about">
-                                    <a class="widget-logo" href="index.html">
-                                        <img src="assets/images/logo.webp" width="95" height="68" alt="Logo">
-                                    </a>
-                                    <p class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-5 mt-md-0 mt-9">
-                            <div class="widget-item">
-                                <h4 class="widget-title">Information</h4>
-                                <ul class="widget-nav">
-                                    <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="about-us.html">About us</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                    <li><a href="faq.html">Privacy</a></li>
-                                    <li><a href="account-login.html">Login</a></li>
-                                    <li><a href="product.html">Shop</a></li>
-                                    <li><a href="my-account.html">My Account</a></li>
-                                    <li><a href="faq.html">FAQs</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 mt-lg-0 mt-6">
-                            <div class="widget-item">
-                                <h4 class="widget-title">Social Info</h4>
-                                <div class="widget-social">
-                                    <a href="https://twitter.com/" target="_blank" rel="noopener"><i class="fa fa-twitter"></i></a>
-                                    <a href="https://www.facebook.com/" target="_blank" rel="noopener"><i class="fa fa-facebook"></i></a>
-                                    <a href="https://www.pinterest.com/" target="_blank" rel="noopener"><i class="fa fa-pinterest-p"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--== End Footer Main ==-->
+        <footer class="footer-area" id="footer">
 
-            <!--== Start Footer Bottom ==-->
-            <div class="footer-bottom">
-                <div class="container pt-0 pb-0">
-                    <div class="footer-bottom-content">
-                        <p class="copyright">© 2022 Brancy. Made with <i class="fa fa-heart"></i> by <a target="_blank" href="https://themeforest.net/user/codecarnival">Codecarnival.</a></p>
-                    </div>
-                </div>
-            </div>
-            <!--== End Footer Bottom ==-->
         </footer>
         <!--== End Footer Area Wrapper ==-->
 
@@ -515,7 +441,8 @@
                                                 </div>
                                                 <button type="button" class="product-review-show">150 reviews</button>
                                             </div>
-                                            <p class="mb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, repellendus. Nam voluptate illo ut quia non sapiente provident alias quos laborum incidunt, earum accusamus, natus. Vero pariatur ut veniam sequi amet consectetur.</p>
+                                            <p class="mb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, repellendus. Nam voluptate illo ut quia non sapiente provident alias quos laborum incidunt, earum accusamus, natus. Vero pariatur ut veniam
+                                                sequi amet consectetur.</p>
                                             <div class="product-details-pro-qty">
                                                 <div class="pro-qty">
                                                     <input type="text" title="Quantity" value="01">
@@ -565,7 +492,7 @@
                     </li>
                 </ul>
                 <p class="cart-total"><span>Subtotal:</span><span class="amount">£89.99</span></p>
-                <a class="btn-total" href="product-cart.html">View cart</a>
+                <a class="btn-total" href="/CODE/brancy-html/pages/cart.html">View cart</a>
                 <a class="btn-total" href="product-checkout.html">Checkout</a>
             </div>
         </aside>
@@ -647,18 +574,18 @@
     <!-- JS Vendor, Plugins & Activation Script Files -->
 
     <!-- Vendors JS -->
-    <script src="./assets/js/vendor/modernizr-3.11.7.min.js"></script>
-    <script src="./assets/js/vendor/jquery-3.6.0.min.js"></script>
-    <script src="./assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
-    <script src="./assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="/CODE/brancy-html//assets/js/vendor/modernizr-3.11.7.min.js"></script>
+    <script src="/CODE/brancy-html//assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="/CODE/brancy-html//assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
+    <script src="/CODE/brancy-html//assets/js/vendor/bootstrap.bundle.min.js"></script>
 
     <!-- Plugins JS -->
-    <script src="./assets/js/plugins/swiper-bundle.min.js"></script>
-    <script src="./assets/js/plugins/fancybox.min.js"></script>
-    <script src="./assets/js/plugins/jquery.nice-select.min.js"></script>
+    <script src="/CODE/brancy-html//assets/js/plugins/swiper-bundle.min.js"></script>
+    <script src="/CODE/brancy-html//assets/js/plugins/fancybox.min.js"></script>
+    <script src="/CODE/brancy-html//assets/js/plugins/jquery.nice-select.min.js"></script>
 
     <!-- Custom Main JS -->
-    <script src="./assets/js/main.js"></script>
+    <script src="/CODE/brancy-html//assets/js/main.js"></script>
 
 </body>
 
